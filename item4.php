@@ -20,7 +20,7 @@ function mostValue($a, $b, $v)
         $range = $b[$count] -  $a[$count];
 
         foreach(range($a[$count], $a[$count]+$range) as $c){
-            $lista[$c] = $lista[$c] + $v[$count];
+            @$lista[$c] = $lista[$c] + $v[$count];
             // echo "c:".$c;
             // echo "count:".$count;
 
